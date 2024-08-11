@@ -1,0 +1,47 @@
+.SearchSongForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.UpdateSongForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.SearchSongForm div,
+.UpdateSongForm div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.SearchSongForm input,
+.UpdateSongForm input {
+    width: 200px;
+    height: 30px;
+    border-radius: 25px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.SearchSongForm button,
+.UpdateSongForm button {
+    margin-top: 5px;
+    width: 200px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: tomato;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}

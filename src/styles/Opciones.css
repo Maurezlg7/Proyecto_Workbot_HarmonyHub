@@ -1,0 +1,91 @@
+.Seccion_A {
+    width: 14%;
+    height: 100%;
+    background-color: rgba(204, 109, 255, 0.507);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.Logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+}
+
+.Logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.Logo span {
+    color: white;
+    font-family: cursive;
+    font-weight: 900;
+    font-size: 24px;
+}
+
+.list-options {
+    width: 100%;
+    height: 90%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.list-options li {
+    width: 90%;
+    height: 170px;
+    background-color: rgba(0, 255, 170, 0.459);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.list-options li:hover {
+    background-color: rgba(255, 255, 255, 0.443);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.list-options li button {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.list-options li button:hover {
+    transform: scale(1.05);
+}
+
+.list-options li button svg {
+    width: 80px;
+    height: 80px;
+}
+
+.list-options li button span {
+    font-family: cursive;
+    font-weight: 900;
+    font-size: 18px;
+}

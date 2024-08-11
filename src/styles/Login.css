@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Russo+One");
+
+.login-container {
+  font-family: 'Lato', sans-serif;
+  background-image: url('../assets/fondomusic.jpg');
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+}
+
+:root {
+  --bgColor: white;
+  --inputColor: dodgerblue;
+  --outlineColor: dodgerblue;
+  --beamColor: rgb(244, 244, 108);
+  --spacer: 1rem;
+}
+
+.login-container html, .login-container {
+  height: 100vh;
+}
+
+.login-container {
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.login-container.show-password {
+  --bgColor: rgb(45, 5, 5);
+  --inputColor: white;
+  --outlineColor: var(--beamColor);
+}
+
+.login-container h1 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: var(--spacer);
+  font-family: 'Russo One', sans-serif;
+}
+
+.login-container form {
+  transform: translate3d(0, 0, 0);
+  padding: var(--spacer);
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  width: 400px;
+}
+.login-container form > * + * {
+  margin-top: var(--spacer);
+}
+
+.form-item > * + * {
+  margin-top: 0.5rem;
+}
+
+.login-container label,
+.login-container input,
+.login-container button {
+  font-size: 1.5rem;
+  font-family: 'Lato', sans-serif;
+  color: rgb(102, 175, 239);
+  text-align: left;
+}
+
+.login-container label {
+  display: block;
+}
+
+.login-container label:focus,
+.login-container input:focus,
+.login-container button:focus {
+  outline: 3px solid var(--outlineColor);
+  outline-offset: 2px;
+}
+.login-container label::-moz-focus-inner,
+.login-container input::-moz-focus-inner,
+.login-container button::-moz-focus-inner {
+  border: none;
+}
+
+.login-container button {
+  border: none;
+}
+
+.login-container [id=submit] {
+  cursor: pointer;
+  margin: calc(var(--spacer) * 2) 0 0 2px;
+  padding: 0.75rem 1.25rem;
+  color: var(--bgColor);
+  background-color: var(--inputColor);
+  box-shadow: 4px 4px 0 rgba(30, 144, 255, 0.2);
+}
+
+.login-container [id=submit]:active {
+  transform: translateY(1px);
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.login-container input {
+  padding: 0.75rem 4rem 0.75rem 0.75rem;
+  width: 100%;
+  border: 2px solid transparent;
+  border-radius: 0;
+  background-color: transparent;
+  box-shadow: inset 0 0 0 2px black, inset 6px 6px 0 rgba(30, 144, 255, 0.2), 3px 3px 0 rgba(30, 144, 255, 0.2);
+  -webkit-appearance: none;
+  appearance: none;
+}
+.login-container input:focus {
+  outline-offset: 1px;
+}
+.show-password input {
+  box-shadow: inset 0 0 0 2px black;
+  border: 2px dashed white;
+}
+.show-password input:focus {
+  outline: none;
+  border-color: var(--beamColor);
+}
+
+[id=eyeball] {
+  --size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  top: 50%;
+  right: 0.75rem;
+  border: none;
+  background-color: transparent;
+  transform: translateY(-50%);
+}
+[id=eyeball]:active {
+  transform: translateY(calc(-50% + 1px));
+}
+
+.eye {
+  width: var(--size);
+  height: var(--size);
+  border: 2px solid var(--inputColor);
+  border-radius: calc(var(--size) / 1.5) 0;
+  transform: rotate(45deg);
+}
+.eye:before, .eye:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  border-radius: 100%;
+}
+.eye:before {
+  width: 35%;
+  height: 35%;
+  background-color: var(--inputColor);
+}
+.eye:after {
+  width: 65%;
+  height: 65%;
+  border: 2px solid var(--inputColor);
+  border-radius: 100%;
+}
+
+[id=beam] {
+  position: absolute;
+  top: 50%;
+  right: 1.75rem;
+  -webkit-clip-path: polygon(100% 50%, 100% 50%, 0 0, 0 100%);
+          clip-path: polygon(100% 50%, 100% 50%, 0 0, 0 100%);
+  width: 100vw;
+  height: 25vw;
+  z-index: 1;
+  mix-blend-mode: multiply;
+  transition: transform 200ms ease-out;
+  transform-origin: 100% 50%;
+  transform: translateY(-50%) rotate(var(--beamDegrees, 0));
+  pointer-events: none;
+}
+.show-password [id=beam] {
+  background: var(--beamColor);
+}
+
+.logo {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  width: 100px;
+  height: auto;
+}
