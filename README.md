@@ -1,9 +1,6 @@
-HECHO POR MAURO
+HECHO POR CLAUDIA
 
-*Songs.jsx
-PLAYER /
-    Opciones.jsx
-    ActualizarCancion.jsx
-    AgregarCancion.jsx
-    Genres.jsx
-    Opciones.jsx
+useFetch.jsx
+Login.jsx
+ErrorNotFound.jsx
+Profile.jsx
