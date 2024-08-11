@@ -26,5 +26,8 @@ Layout.jsx
 ProtectedRoute.jsx
 Routes.jsx
 
-  url del trabajo realizado en figma
+  TRABAJO REALIZADO EN FIGMA
   https://www.figma.com/proto/wMN3Kp2Fed9hdsLq74tt1I?node-id=0-1&t=KfVNa65fA8BK3Xl3-6
+
+  TRABAJO REALIZADO EN NOTION
+  https://www.notion.so/HARMONY-93dd118356844f60a83c1b09e9ceb96b
