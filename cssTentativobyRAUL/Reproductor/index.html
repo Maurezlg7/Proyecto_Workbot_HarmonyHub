@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ReproductorWorkbot</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet"/>
+<div class="container">
+  <div class="wrapper">
+    <div class="app-ui left-ui">
+      <div class="header">
+        <div class="discover">Workbot</div>
+        <div class="menu-line"></div>
+      </div>
+      <div class="left-menu-bar">
+        <div class="playlist">
+              <div class="ur-playlist">Portada</div>
+        </div>
+        <div class="like-recent">
+          <button class="ur-playlist recent">Próximo</button>
+          <div class="recent-detail"></div>
+          <button class="ur-playlist like">Anterior</button>
+        </div>
+      </div>
+      <div class="album-img">
+        <div class="relax">Workbot</div>
+      </div>
+      <div class="music-list">
+        <div class="song">
+          <div class="song-img">
+            <img src="generos.png" />
+          </div>
+          <div class="song-detail">
+            <div class="song-name">Géneros</div>
+          </div>
+        </div>
+        <div class="song">
+          <div class="song-img">
+            <img src="canciones.jpg" />
+          </div>
+          <div class="song-detail">
+            <div class="song-name">Canciones</div>
+          </div>
+        </div>
+        <div class="song">
+          <div class="song-img">
+            <img src="albunes.jpg" />
+          </div>
+          <div class="song-detail">
+            <div class="song-name">Albunes</div>
+          </div>
+        </div>
+        <div class="song">
+          <div class="song-img">
+            <img src="artistas.png" />
+          </div>
+          <div class="song-detail">
+            <div class="song-name">Artistas</div>
+          </div>
+        </div>
+        <div class="song">
+          <div class="song-img">
+            <img src="buscar.jpg" />
+          </div>
+          <div class="song-detail">
+            <div class="song-name">Buscar</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="app-ui right-ui">
+      <div class="play-action">
+        <div class="half-arrow">
+          <div class="line">
+            <div class="other-line"></div>
+          </div>
+        </div>
+        <div class="what-play">Reproductor</div>
+        <div class="double-dot">
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+      <div class="app-ui inside-right">
+        <div class="bigPlay">
+          <img src="./harmonyTransparente.png" />
+          <div class="grey-detail"></div>
+          <div class="grey-detail-sec"></div>
+          <button class="btn play-pause">
+            <div class="icon-container">
+              <div class="icon play bigger-play">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 308.838 308.838">
+                  <path fill="#063064" d="M269.394 139.638c-.4-.8-.8-1.2-1.2-1.6-.8-1.2-1.6-2-2.8-3.2-1.2-1.2-2.8-2.4-4-3.2l-91.6-63.2-92-63.6c-6-4.4-13.6-5.6-20.4-4.4s-13.2 5.2-17.2 11.2c-1.6 2.4-2.8 4.8-3.6 7.2-.8 2-1.2 4-1.2 6.4v256.4c0 7.6 3.2 14.4 8 19.2 4.4 4.8 11.2 8 18.8 8 3.2 0 6.4-.4 9.2-1.6 2.8-.8 5.2-2.4 7.6-4.4l90.8-62.8 91.2-63.2c.4-.4 1.2-.8 1.6-1.2 5.6-4.4 9.2-10.4 10.4-16.8 1.2-6.4 0-13.6-3.6-19.2zm-20 20.4l-92 63.6-90.4 62.4c-.4 0-.8.4-.8.4-.4.4-1.2.8-2 1.2-.8.4-1.2.4-2 .4-1.6 0-3.2-.8-4.4-1.6-1.2-1.2-1.6-2.8-1.6-4.4v-127.6h-.4v-126-1.6c0-.4 0-.8.4-1.2 0-.4.4-.8.4-1.2.4-.4.4-.4.4-.8.8-1.2 2.4-2 3.6-2 1.6-.4 2.8 0 4.4.8.4.4.8.4 1.2.8l91.2 63.2 91.6 63.2c.4.4.8.4.8.8.4.4.4.8.8.8.8 1.6 1.2 3.2 1.2 4.8-.4 1.6-1.2 3.2-2.4 4z" class="active-path" data-old_color="#000000" data-original="#000000" />
+                </svg>
+              </div>
+            </div>
+            <div class="icon-container">
+              <div class="icon pause bigger-pause">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 493.528 493.528">
+                  <path fill="#063064" d="M178.064 0L166.04.248c-14.876 0-27.236 12.112-27.236 26.992v439.664c0 14.876 13.396 26.624 28.272 26.624h.084l10.976-.072c14.892 0 26.22-11.92 26.22-26.808V26.996C204.352 12.116 193.028 0 178.064 0zM328.584 0l-12.092.248c-14.88 0-27.3 12.112-27.3 26.992v439.664c0 14.876 13.708 26.624 28.58 26.624h.084l10.816-.072c14.88 0 26.052-11.92 26.052-26.808V26.996C354.72 12.116 343.548 0 328.584 0z" class="active-path" data-old_color="#000000" data-original="#000000" />
+                </svg>
+              </div>
+            </div>
+          </button>
+          <div class="song-detail right-detail">
+            <div class="song-name right-song">Harmony</div>
+            <div class="song-name play-artist right-artist">Workbot</div>
+          </div>
+          <div class="line-wrapper">
+            <div class="lines grey"></div>
+            <div class="lines grey"></div>
+            <div class="lines grey"></div>
+            <div class="lines grey"></div>
+            <div class="lines grey"></div>
+            <div class="lines grey"></div>
+            <div class="lines grey"></div>
+            <div class="lines grey"></div>
+            <div class="lines grey"></div>
+            <div class="lines grey"></div>
+            <div class="lines grey"></div>
+            <div class="lines grey"></div>
+            <div class="lines grey"></div>
+            <div class="lines grey"></div>
+            <div class="lines grey"></div>
+            <div class="lines grey"></div>
+            <div class="lines grey"></div>
+            <div class="lines grey"></div>
+            <div class="lines grey"></div>
+            <div class="lines grey"></div>
+            <div class="lines grey"></div>
+            <div class="lines grey"></div>
+            <div class="lines grey"></div>
+            <div class="lines grey"></div>
+            <div class="lines grey"></div>
+            <div class="lines grey"></div>
+            <div class="lines grey"></div>
+            <div class="lines grey"></div>
+            <div class="lines grey"></div>
+            <div class="lines grey"></div>
+            <div class="lines grey"></div>
+            <div class="lines grey"></div>
+            <div class="lines grey"></div>
+          </div>
+          <div class="song-actions">
+            <button class="action-btn">Agregar canción</button>
+            <button class="action-btn">Eliminar canción</button>
+            <button class="action-btn">Editar canción</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div></div>
+</div>
+
+<audio style="display: none;" controls id="audio"><!-- musica de ejemplo, aqui ligar a sand box de la academia -->
+  <source src="https://mp3d.jamendo.com/?trackid=1884527&format=mp31" type="audio/mpeg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src="./script.js"></script>
+
+</body>
+</html>
+
