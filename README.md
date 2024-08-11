@@ -15,3 +15,6 @@ Implementación de autenticación: Implementar el flujo de autenticación utiliz
 Layout.jsx
 ProtectedRoute.jsx
 Routes.jsx
+
+  url del trabajo realizado en figma
+  https://www.figma.com/proto/wMN3Kp2Fed9hdsLq74tt1I?node-id=0-1&t=KfVNa65fA8BK3Xl3-6
